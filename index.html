@@ -1,58 +1,153 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">
 
 <head>
     <meta charset="UTF-8">
-
-    <style>
-        body {
-            margin: auto;
-            font-family: arial,sans-serif system-ui;
-            background: white;
-            color: white;
-            text-align: center;
-        }
-        .container{
-            height: 200px;
-            position: relative;
-        }
-        .top-left{
-            margin: 0;
-            position: absolute;
-            top: 10%;
-            left: 10px;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-      
-    </style>
-
 </head>
 
+<style>
+body {
+  margin: auto;
+  font-family: arial, sans-serif system-ui;
+  background: white;
+  color: white;
+  text-align: center;
+}
+
+.topnav{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.top-left{
+  font-family: arial;
+  float: left;
+  display: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.top-right{
+  font-family: arial;
+  float: right;
+  display: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.center {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar {
+  background-color: #c6c6c6;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  font-family: arial;
+  float: left;
+  display: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+.sign{
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.butt{
+  font-family: arial, sans-serif system-ui;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.searchbox{
+  border-radius: 25px;
+}
+#mic{
+  height:30px;
+  position: relative;
+    left: -50px;
+    top: 10px;
+    z-index: 1;
+}
+
+
+</style>
+
+
 <body>
-    <div>        
-        <div class="container">
-            <div class="top-left">
-                <button type="About">About</button>
-            </div>
-          </div>
+          
+  <div class="topnav">
+    <div class="top-left">
+      <button class="butt" type="About">About</button>
+      <button class="butt" type="Store">Store</button>
     </div>
-    <div>
-        <div>
-            <img id="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-        </div>
-        <div>
-            <input  type="text" class="searchbox" style="width:588px; height:44px;"" placeholder="" required>
-        </div>
-        <div>
-            <button type="submit">Search</button>
-            <button type="submit">I'm Feeling Lucky</button>
-        </div>
-            
-            
-        
+    <div class="top-right">
+      <button class="butt"  type="Gmail">Gmail</button>   
+      <button class="butt"  type="Images">Images</button>      
+      <button class="sign" type="Signin">Sign in</button>
     </div>
+  </div>
+     
+  <div>
+    <div class="center">
+      <img id="image"   src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+      
+    </div>
+  </div>
+  
+  <div>
+    <input  type="text" class="searchbox" style="width:588px; height:44px;" placeholder="" required>
+    <img id="mic" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt= "google microphone">
+  </div>
+  
+                                                                                           
+  <div>
+    <button  class="butt"  type="submit">Search</button>
+    <button  class="butt"  type="submit">I'm Feeling Lucky</button>
+  </div>
+                                                
+  <div class="navbar">
+    <a href="#Advertising" class="active">Advertising</a>
+    <a href="#Business">Business</a>
+    <a href="#howsearchworks">How Search works</a>
+  </div>            
 
 </body>
     
